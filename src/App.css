@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
+@import './css/grid.css';
+@import './css/reset.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Estilos gerais */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: Arial, Helvetica, sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    line-height: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  img {
+    display: block;
+    max-width: 100%;
   }
+  
+  .subtitulo {
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .subtitulo:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px auto;
+  }
+  
+  /* Subtitulo Interno */
+  
+  .subtitulo-interno {
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .subtitulo-interno:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
+  }
+  
+  .btn {
+    border: 3px solid #fec63e;
+    padding: 10px 30px;
+    color: #fec63e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+  }
+  
+  .btn:hover {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .btn.btn-preto:hover {
+    border-color: #000;
+    color: #000;
+  }
+  
+  /* Introdução */
+  
+  .introducao {
+    width: 100%;
+    height: 380px;
+    background: url('./img/bg.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 92px;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  .introducao h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  
+  .quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .quote-externo p {
+    font-style: italic;
+  }
+  
+  .quote-externo p:before,
+  .quote-externo p:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 14px auto 10px auto;
+  }
+  
+  .quote-externo cite {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+  
+  /* Introdução Interna */
+  
+  .introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+  }
+  
+  .introducao-interna h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  
+  .introducao-interna h1:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto;
+  }
+  
+  
+  
+  /* Quebra */
+  
+  .quebra {
+    width: 100%;
+    height: 220px;
+    background: url('./img/bg-footer.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .quebra .quote-externo {
+    max-width: 400px;
+  }
+  
+  
+  
+.container-componente {
+    margin: 100px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-componente p {
+    font-size: 45px;
 }

@@ -1,0 +1,49 @@
+.produtos {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .produtos img {
+    margin: 0 auto;
+  }
+  
+  .produtos_lista li {
+    background: #fec63e;
+  }
+  
+  .produtos_lista li h3 {
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+  }
+  
+  .produtos_lista li h3:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto;
+  }
+  
+  .produtos_lista li p {
+    padding: 10px 20px 20px 20px;
+  }
+  
+  .produtos_icone {
+    background: #000;
+    padding: 20px;
+  }
+  
+  .call {
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+  }
+  
+  .call p {
+    margin-bottom: 20px;
+  }
