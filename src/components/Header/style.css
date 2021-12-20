@@ -31,6 +31,6 @@
     color: #fff;
 }
 
-.header_menu ul li a.menu_ativo {
-    color: #fff;
+.header_menu ul li.menu_ativo a {
+    color: #fff !important;
 }

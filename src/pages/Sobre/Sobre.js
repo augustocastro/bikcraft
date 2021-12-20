@@ -2,7 +2,7 @@
 function Sobre() {
     return (
         <div className="container-componente">
-            <p>Portifolio</p>
+            <p>Sobre</p>
         </div>
     );
 }

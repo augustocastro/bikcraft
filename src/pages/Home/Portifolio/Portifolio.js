@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 import './style.css';
 
@@ -19,7 +20,7 @@ function Portifolio() {
 
                 <div className="call">
                     <p>Connheça mais o nosso portifólio</p>
-                    <a href="portifolio.html" className="btn">Portifólio</a>
+                    <Link to="/portifolio" className="btn">Portifólio</Link>
                 </div>
             </div>
         </section>

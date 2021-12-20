@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 import Produtos from './Produtos/Produtos';
@@ -16,7 +18,7 @@ function Home() {
                         </p>
                         <cite>WILLIAM MORRIS</cite>
                     </blockquote>
-                    <a data-anime="1200" href="produtos.html" className="btn">Orçamento</a>
+                    <Link data-anime="1200" to="/produtos" className="btn">Orçamento</Link>
                 </div>
             </section>
 

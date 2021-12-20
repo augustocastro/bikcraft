@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 import Passeio from '../../../img/produtos/passeio.svg';
@@ -35,7 +37,7 @@ function Produtos() {
 
             <div className="call">
                 <p>clique aqui e veja os detalhes dos produtos</p>
-                <a href="produtos.html" className="btn btn-preto">Produtos</a>
+                <Link to="/produtos" className="btn btn-preto">Produtos</Link>
             </div>
         </section>
     );

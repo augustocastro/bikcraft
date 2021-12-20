@@ -14,8 +14,8 @@ import Portifolio from './pages/Portifolio/Portifolio';
 function App() {
   return (
     <div>
-        <Header />
         <BrowserRouter>
+            <Header />
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/sobre" element={<Sobre/>}></Route>
@@ -23,8 +23,8 @@ function App() {
                 <Route path="/portifolio" element={<Portifolio/>}></Route>
                 <Route path="/contato" element={<Contato/>}></Route>
             </Routes>
+            <Footer />
         </BrowserRouter>
-        <Footer />
     </div>
   );
 }
