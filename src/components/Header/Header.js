@@ -7,13 +7,13 @@ import Logo from '../../img/bikcraft.svg';
 function Header() {
     const location = useLocation();
     const pathname = location.pathname.replace('/', '');
-    
+
     return (
         <header className="header">
             <div className="container">
-                <a href="/" className="grid-4">
+                <Link to="/" className="grid-4">
                     <img src={Logo} alt="Bikcraft" />
-                </a>
+                </Link>
                 <nav className="grid-12 header_menu">
                     <ul>
                         <li className={ pathname === 'sobre' ? 'menu_ativo': '' }><Link to="sobre">Sobre</Link></li>
